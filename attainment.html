@@ -8,5 +8,32 @@
   <p>Idea behind the title: The song follows two violins who are siblings growing up together, not always getting along but sometimes getting along. When they become adults they separate but still meet up every once in a while. The viola and cello are the violins' parents, and become old, get dementia, and die when the violins are adults, and the violins mourn then continue with their lives. Then, the violins retire (independently) and get weaker until they too get dementia. Of course, since they have dementia, they don't have recent memories and are reliving the memorable parts of their childhood. One violin dies of heart disease, and the other dies of cancer. Their deaths seem expected but also sudden ("it happened too soon").</p><br>
   <h3>Idea behind the part I am working on (as of 6/28/2024 at 1425 zulu):</h3><br>
   <p>The literal joy of having children just died off, as the parents realize the responsibility of having children is a sarcastical joy. One violin is behaving and the other violin is creating dissonance. I may have one parent trying to figure things out, or I may move on.</p>
+  <button id="DLBtn">Dark mode</button>
+  <script>
+    window.isDark = false;
+    function toggleDL() { //DL means Dark Light
+      if (isDark) {
+        lightMode();
+        document.getElementById("DLBtn").innerHTML = `Dark mode`;
+      } else {
+        darkMode();
+        document.getElemenById("DLBtn").innerHTML = `Light mode`;
+      }
+      isDark = !isDark;
+    }
+    function darkMode() {
+      document.body.style.background = 'black';
+      var l = document.body.getElementsByTagName("*");
+      for (var i = 0; i < l.length; i++) {
+        l[i].style.color = 'white';
+      }
+    }
+    function lightMode() {
+      document.body.style.background = 'white';
+      var l = document.body.getElementsByTagName("*");
+      for (var i = 0; i < l.length; i++) {
+        l[i].style.color = 'black';
+      }
+  </script>
 </body>
 </html>
