@@ -22,21 +22,21 @@
       isDark = !isDark;
     }
     function darkMode() {
-      var d = document.body.getElementsByClassName("bg");
+      var d = document.getElementsByClassName("bg");
       for (var i = 0; i < d.length; i++) {
         d[i].style.background = 'black';
       }
-      var l = document.body.getElementsByClassName("txt");
+      var l = document.getElementsByClassName("txt");
       for (var i = 0; i < l.length; i++) {
         l[i].style.color = 'white';
       }
     }
     function lightMode() {
-      var d = document.body.getElementsByClassName("bg");
+      var d = document.getElementsByClassName("bg");
       for (var i = 0; i < d.length; i++) {
         d[i].style.background = 'white';
       }
-      var l = document.body.getElementsByClassName("txt");
+      var l = document.getElementsByClassName("txt");
       for (var i = 0; i < l.length; i++) {
         l[i].style.color = 'black';
       }
