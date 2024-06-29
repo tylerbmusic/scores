@@ -12,6 +12,7 @@
   <p class="txt">The parents are experiencing the effects of sleep deprivation.</p><br>
   <button class="bg txt" id="DLBtn" onclick="toggleDL()">Dark mode</button>
   <script>
+
     window.isDark = false;
     function toggleDL() { //DL means Dark Light
       if (isDark) {
@@ -26,17 +27,17 @@
     function darkMode() {
       var d = document.getElementsByClassName("bg");
       for (var i = 0; i < d.length; i++) {
-        d[i].style.background = '#0D0936';
+        d[i].style.background = '#262D41';
       }
       var l = document.getElementsByClassName("txt");
       for (var i = 0; i < l.length; i++) {
-        l[i].style.color = '#D8D4FF';
+        l[i].style.color = '#CED9EB';
       }
     }
     function lightMode() {
       var d = document.getElementsByClassName("bg");
       for (var i = 0; i < d.length; i++) {
-        d[i].style.background = '#D8D4FF';
+        d[i].style.background = '#D8DFEB';
       }
       var l = document.getElementsByClassName("txt");
       for (var i = 0; i < l.length; i++) {
